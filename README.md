@@ -13,8 +13,12 @@
     </style>
      </head>
     <body>
+        <img src="omikujihako.png" border="0" name="kuji">
+        <form>
+        <input type="button" value="choose" onclick="myChange()">
+        </form>
             <script type="text/javascript">
-            myImage = new Array(
+            myImage =new Array(
             "./daikichi.png",
             "./chukichi.png",
             "./shokichi.png",
@@ -25,11 +29,6 @@
                  myRnd = Math.floor( Math.random() * myImage.length );
                  document.kuji.src = myImage[myRnd];
             }
-            </script>
-            <img src="omikujihako.png" border="0" name="kuji">
-            <form>
-            <input type="button" value="choose" onclick="myChange()">
-            </form>
         </script>
     </body>
 </html>
